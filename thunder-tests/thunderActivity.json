@@ -1,0 +1,16 @@
+[
+  {
+    "_id": "dad2070c-8017-4e7c-af53-44a130dd96e3",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:3000/bigas",
+    "url": "localhost:3000/bigas",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-10-04T18:14:37.482Z",
+    "modified": "2023-10-04T18:14:37.482Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  }
+]
