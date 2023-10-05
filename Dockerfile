@@ -13,10 +13,10 @@ COPY . .
 
 RUN npm install
 
-RUN npm run db:push
-
 RUN unset http_proxy
 RUN unset https_proxy
+
+RUN npm run db:push
 
 EXPOSE 4000
 
