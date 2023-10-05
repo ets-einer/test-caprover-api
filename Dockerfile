@@ -14,7 +14,7 @@ RUN npm install
 
 ENV no_proxy=localhost,127.0.0.*,192.168.*,.local,172.*
 RUN unset http_proxy
-RUn unset https_proxy
+RUN unset https_proxy
 
 RUN npm run db:push
 
