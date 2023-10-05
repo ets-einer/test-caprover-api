@@ -19,9 +19,12 @@ app.post("/bigas", async (req, res) => {
     name: z.string().min(1)
   }).safeParse(req.body)
 
-  if (!result.success) return res.status(400).json({
-    message: "VC EH BUIRRO"
-  })
+  if (!result.success) {
+    console.log(result);
+     return res.status(400).json({
+      message: "VC EH BUIRRO"
+    })
+  }
 
   const created = await prisma.example.create({
     data: {
