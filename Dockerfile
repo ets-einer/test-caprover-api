@@ -11,6 +11,9 @@ WORKDIR /app
 COPY . .
 
 RUN npm install
+
+ENV no_proxy=localhost,127.0.0.*,192.168.*,.local,172.*
+
 RUN npm run db:push
 
 EXPOSE 4000
