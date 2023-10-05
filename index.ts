@@ -2,7 +2,7 @@ import express from 'express'
 import { prisma } from './prisma';
 import { z } from 'zod'
 
-const PORT = 3000
+const PORT = 4000
 
 const app = express();
 
