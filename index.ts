@@ -4,7 +4,7 @@ import { z } from 'zod'
 
 const PORT = 4000
 
-const app = express
+const app = express();
 
 app.use(express.json());
 
