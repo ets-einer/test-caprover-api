@@ -8,6 +8,7 @@ WORKDIR /app
 COPY . .
 
 RUN npm install
+RUN npm prisma db push
 
 EXPOSE 4000
 
