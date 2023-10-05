@@ -12,4 +12,4 @@ RUN npm prisma db push
 
 EXPOSE 4000
 
-CMD ["node", "index.js", "&&", "unset http_proxy", "&&", "unset https_proxy", "&&", "unset no_proxy"]
+CMD ["npm", "run","start", "&&", "unset http_proxy", "&&", "unset https_proxy", "&&", "unset no_proxy"]
