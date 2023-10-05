@@ -20,7 +20,7 @@ app.post("/bigas", async (req, res) => {
   }).safeParse(req.body)
 
   if (!result.success) {
-    console.log(result);
+    console.log(result.error);
      return res.status(400).json({
       message: "VC EH BUIRRO"
     })
