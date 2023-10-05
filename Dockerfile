@@ -16,8 +16,6 @@ RUN npm install
 RUN unset http_proxy
 RUN unset https_proxy
 
-RUN npm run db:push
-
 EXPOSE 4000
 
 CMD ["npm", "run","start", "&&", "unset http_proxy", "&&", "unset https_proxy", "&&", "unset no_proxy"]
