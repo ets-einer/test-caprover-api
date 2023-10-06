@@ -12,7 +12,6 @@ WORKDIR /app
 COPY . .
 
 RUN npm install
-RUN npm run db:push
 
 RUN unset http_proxy
 RUN unset https_proxy
