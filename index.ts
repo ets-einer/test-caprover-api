@@ -18,7 +18,8 @@ app.get("/bigas", async (req, res) => {
 
 app.post("/bigas", async (req, res) => {
   const result = z.object({
-    name: z.string().min(1)
+    name: z.string().min(1),
+    description: z.string().min(1)
   }).safeParse(req.body)
 
   if (!result.success) {
