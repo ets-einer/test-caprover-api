@@ -30,7 +30,8 @@ app.post("/bigas", async (req, res) => {
 
   const created = await prisma.example.create({
     data: {
-      name: result.data.name
+      name: result.data.name,
+      description: result.data.description
     }
   })
 
