@@ -4,8 +4,8 @@ ENV http_proxy=http://172.0.0.1:3128
 ENV https_proxy=http://172.0.0.1:3128
 ENV no_proxy=localhost,127.0.0.1,172.*
 
-ARG DATABASE_URL=${DATABASE_URL}
-ENV DATABASE_URL=${DATABASE_URL}
+ARG DATABASE_URL=mysql://root:caprovereiner@srv-captain--einer-mysql-db:3306/einer_prod
+ENV DATABASE_URL=mysql://root:caprovereiner@srv-captain--einer-mysql-db:3306/einer_prod
 
 WORKDIR /app
 
